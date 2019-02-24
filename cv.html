@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="wathefa"/>
+    <title>Wathefa</title>
+    <link rel="shortcut icon" href="images/logo/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- Js -->
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/logo/loader.gif" class="img-responsive"/>          
+        </div>
+    </div>
+
+    <header class="header" id="header-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12 col-sm-12">
+                    <div class="col-md-4 col-xs-2 padding-0">
+                        <a href="#" class="logo"> <img src="images/logo/logo.png" alt=""> </a>
+                    </div>
+                    <!--links onn mobile show-->
+                    <div class="col-xs-10 hidden-lg hidden-md">
+                        <a href="#nowhere" class="navicon"></a>
+                    </div>
+                    <!--links on desktop show-->
+                    <div class="col-md-8 hidden-sm hidden-xs">
+                        <div class="menu">
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="#">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dashboard</a>
+                                            </li>
+                                            <li>
+                                                <a role="button" data-toggle="collapse" href="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne"
+                                                class="trigger collapsed">Jobs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">My CV</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Companies</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-12">
+                    <div class="all-search-section">
+                        <!-- search -->
+                        <div class="search-button">
+                            <a href="#" class="search-toggle" data-selector="#header-1"></a>
+                        </div>
+                        <div class="notifi-ico">
+                            <a href="#"> <img src="images/notofication.png"/> <span> 3 </span> </a>
+                        </div>
+                        <!-- user icon with option -->
+                        <div class="dropdown">
+                            <div class="user-option" data-toggle="dropdown">
+                                <img src="images/user-icon.png"/>
+                                <h3 class="hidden-xs hidden-sm"> User Name </h3>
+                                <i class="fa fa-angle-down hidden-xs hidden-sm"></i>
+                            </div>
+                            <ul class="dropdown-menu user-links" aria-labelledby="dLabel">
+                                <li>
+                                    <a href="#"> <i class="fa fa-user"></i> <span> View Profile </span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-bell"></i> <span> Notification </span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-sign-out"></i> <span> Logout </span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- links of search job on navbar on desktop screen -->
+        <div id="collapseOne" class="panel-collapse collapse hidden-sm hidden-xs" role="tabpanel">
+            <div class="link-jop">
+                <ul>
+                    <li>
+                        <a href="#"> Search Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Latest Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Bookmarked Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Jobs Applied </a>
+                    </li>
+                    <li>
+                        <a href="#"> Requested Interviews </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- search form -->
+        <div class="search-box">
+            <form action="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <select class="nice-select">
+                                <option value="0"> choose job location </option>
+                                <option value="0"> choose job location </option>
+                                <option value="0"> choose job location </option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <select class="nice-select">
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <input type="text" placeholder="search by keywords">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-1">
+                            <button class="btn btn-search">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+
+    <!-- menu on mobile screen -->
+    <div class="toggle-show-screen  hidden-lg hidden-md">
+        <ul class="toggle__menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a role="button" data-toggle="collapse" href="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo"
+                class="trigger collapsed">Jobs</a>
+                <div id="collapsetwo" class="panel-collapse collapse hidden-lg hidden-md" role="tabpanel">
+                    <div class="link-jop-mobile">
+                        <ul>
+                            <li>
+                                <a href="#"> Search Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Latest Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Bookmarked Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Jobs Applied </a>
+                            </li>
+                            <li>
+                                <a href="#"> Requested Interviews </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#">My CV</a>
+            </li>
+            <li>
+                <a href="#">Companies</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- body content -->
+    <section class="all-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-link wow fadeInDown">
+                        <a href="#">Home </a> / <span> My CV </span>
+                    </div>
+                    <div class="page-title wow fadeInDown">
+                        <h3> My CV</h3>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-9">
+                    <div class="user-info-four wow fadeInLeft">
+                        <div class="save-pdf">
+                            <button>
+                                <img src="images/icons/14.png" class="img-responsive img-1"/>
+                                <span> Save PDF </span>
+                            </button>
+                            <button onclick="window.print();" oncontextmenu="return false;">
+                                <img src="images/icons/15.png" class="img-responsivem img-2"/>
+                                <span> Print </span>
+                            </button>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="user-image">
+                                    <img src="images/user/user.png" class="img-responsive"/>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="col-md-12 ">
+                                    <div class="main-info  prof-head">
+                                        <h3> User Name </h3>
+                                        <h4> Constuction Contactor </h4>
+                                        <h4> Kuwait </h4>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 padding-0">
+                                    <div class="col-xs-12">
+                                        <div class="main-info cv-data">
+                                            <div class="col-xs-12 col-md-6 padding-0">
+                                                <img src="images/map.png" class="img-responsive">
+                                                <h5><label> Address : </label></h5>
+                                                <p>
+                                                    Al-Shaab, Kuwait CityKuwait
+                                                </p>
+                                            </div>
+                                            <div class="col-xs-12 col-md-6 padding-0">
+                                                <img src="images/icons/5.png" class="img-responsive">
+                                                <h5><label> Email : </label> UserName@gmail.com </h5>
+                                                <h5><label> Phone : </label>+96123456789 </h5>
+                                            </div>
+                                            <div class="col-xs-12 padding-0">
+                                                <a href="#" class="btn-overlay"> <span> Edit Contact Information </span> </a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-info-five wow fadeInLeft">
+                        <div class="row">
+                            <!--education section-->
+                            <div class="col-md-12 all-education">
+                                <div class="education-title">
+                                    <img src="images/icons/11.png" class="img-responsive"/>
+                                    <h3> Education</h3>
+                                </div>
+                                <form action="" class="education-details forms_form">
+                                    <div class="edit-section">
+                                        <div class="edit-pen edit-pen-1">
+                                            <i class="fa fa-pencil"></i>
+                                        </div>
+                                        <div class="cancel-select cancel-select-1 show-element-1 hide-section">
+                                            <span> Cancel </span>
+                                        </div>
+                                        <div class="delete-select delete-select-1 show-element-1 hide-section">
+                                            <button>
+                                                <i class="fa fa-close"></i><span> Delete Selected </span>
+                                            </button>
+                                        </div>
+                                        <div class="add-new-button add-new-button-1 show-element-1 hide-section">
+                                            <i class="fa fa-plus"></i><span> Add New </span>
+                                        </div>
+                                    </div>
+                                    <div class="row add-new add-new-1  hide-section">
+                                        <div class="col-md-12">
+                                            <input type="text" id="degree-1" name="" placeholder="Degree Name*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" id="univ-1" name="" placeholder="University*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" id="from-1" name="" placeholder="From*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" id="to-1" name="" placeholder="To*" class="form-education"/>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea id="desc-1" name="" placeholder="Description*"
+                                                class="form-education form-text-area"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button href="#" class="btn-overlay">
+                                                <span>Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="education-check">
+                                        <div>
+                                            <input id="checkbox-1" class="checkbox-custom checkbox-custom-1"
+                                            name="checkbox-1" type="checkbox">
+                                            <label for="checkbox-1" class="label-check label-check-1"> <h3> Masters in Computer Science </h3> <h4> Cairo University 2002 - 2004 </h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip ex ea commodot enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo
+                                                    consequat. exercitation ullamco laboris nisi ut aliquip
+                                                    ex ea commodo consequat.
+                                                </p> </label>
+                                        </div>
+                                        <div>
+                                            <input id="checkbox-2" class="checkbox-custom checkbox-custom-1"
+                                            name="checkbox-2" type="checkbox">
+                                            <label for="checkbox-2" class="label-check label-check-1"> <h3> Masters in Computer Science </h3> <h4> Cairo University 2002 - 2004 </h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip ex ea commodot enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo
+                                                    consequat. exercitation ullamco laboris nisi ut aliquip
+                                                    ex ea commodo consequat.
+                                                </p> </label>
+                                        </div>
+                                        <div>
+                                            <input id="checkbox-3" class="checkbox-custom checkbox-custom-1"
+                                            name="checkbox-2" type="checkbox">
+                                            <label for="checkbox-3" class="label-check label-check-1"> <h3> Masters in Computer Science </h3> <h4> Cairo University 2002 - 2004 </h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip ex ea commodot enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo
+                                                    consequat. exercitation ullamco laboris nisi ut aliquip
+                                                    ex ea commodo consequat.
+                                                </p> </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--work section-->
+                            <div class="col-md-12 all-education">
+                                <div class="education-title">
+                                    <img src="images/icons/3.png" class="img-responsive"/>
+                                    <h3> Work Experience</h3>
+                                </div>
+                                <form action="" class="education-details forms_form">
+                                    <div class="edit-section">
+                                        <div class="edit-pen edit-pen-2">
+                                            <i class="fa fa-pencil"></i>
+                                        </div>
+                                        <div class="cancel-select cancel-select-2 show-element-2 hide-section">
+                                            <span> Cancel </span>
+                                        </div>
+                                        <div class="delete-select delete-select-2 show-element-2 hide-section">
+                                            <button>
+                                                <i class="fa fa-close"></i><span> Delete Selected</span>
+                                            </button>
+                                        </div>
+                                        <div class="add-new-button add-new-button-2 show-element-2 hide-section">
+                                            <i class="fa fa-plus"></i><span> Add New </span>
+                                        </div>
+                                    </div>
+                                    <div class="row add-new add-new-2  hide-section">
+                                        <div class="col-md-12">
+                                            <input type="text" id="degree-2" name="" placeholder="Job*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" id="univ-2" name="" placeholder="Company Name*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" id="from-2" name="" placeholder="From*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input type="text" id="to-2" name="" placeholder="To*" class="form-education"/>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="text" id="loca-2" name="" placeholder="Location*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea id="desc-2" name="" placeholder="Description*"
+                                                class="form-education form-text-area"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button href="#" class="btn-overlay">
+                                                <span>Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="education-check">
+                                        <div>
+                                            <input id="checkbox2-1" class="checkbox-custom checkbox-custom-2"
+                                            name="checkbox-1" type="checkbox">
+                                            <label for="checkbox2-1" class="label-check label-check-2"> <h3> Development Manager </h3> <h6> 5 April 2005 - 1 Aug 2008 ( 3 Years & 4 Months) </h6> <h4> Company Name </h4> <h4> Location </h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip ex ea commodot enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo
+                                                    consequat. exercitation ullamco laboris nisi ut aliquip
+                                                    ex ea commodo consequat.
+                                                </p> </label>
+                                        </div>
+                                        <div>
+                                            <input id="checkbox2-2" class="checkbox-custom checkbox-custom-2"
+                                            name="checkbox-2" type="checkbox">
+                                            <label for="checkbox2-2" class="label-check label-check-2"> <h3>Development Manager </h3> <h6> 5 April 2005 - 1 Aug 2008 ( 3 Years & 4 Months) </h6> <h4> Company Name </h4> <h4> Location </h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip ex ea commodot enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo
+                                                    consequat. exercitation ullamco laboris nisi ut aliquip
+                                                    ex ea commodo consequat.
+                                                </p> </label>
+                                        </div>
+                                        <div>
+                                            <input id="checkbox2-3" class="checkbox-custom checkbox-custom-2"
+                                            name="checkbox-2" type="checkbox">
+                                            <label for="checkbox2-3" class="label-check label-check-2"> <h3>Development Manager </h3> <h6> 5 April 2005 - 1 Aug 2008 ( 3 Years & 4 Months) </h6> <h4> Company Name </h4> <h4> Location </h4>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                    tempor incididunt ut labore et dolore magna aliqua.
+                                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                                                    ut aliquip ex ea commodot enim ad minim veniam,
+                                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex eacommodo
+                                                    consequat. exercitation ullamco laboris nisi ut aliquip
+                                                    ex ea commodo consequat.
+                                                </p> </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--skills section-->
+                            <div class="col-md-12 all-education skills--box">
+                                <div class="education-title">
+                                    <img src="images/icons/12.png" class="img-responsive"/>
+                                    <h3> Professional Skills</h3>
+                                </div>
+                                <form action="" class="education-details forms_form">
+                                    <div class="edit-section">
+                                        <div class="edit-pen edit-pen-3">
+                                            <i class="fa fa-pencil"></i>
+                                        </div>
+                                        <div class="cancel-select cancel-select-3 show-element-3 hide-section">
+                                            <span> Cancel </span>
+                                        </div>
+                                        <div class="delete-select delete-select-3 show-element-3 hide-section">
+                                            <button>
+                                                <i class="fa fa-close"></i><span> Delete Selected </span>
+                                            </button>
+                                        </div>
+                                        <div class="add-new-button add-new-button-3 show-element-3 hide-section">
+                                            <i class="fa fa-plus"></i><span> Add New </span>
+                                        </div>
+                                    </div>
+                                    <div class="row add-new add-new-3  hide-section">
+                                        <div class="col-md-6">
+                                            <input type="text" id="pre-1" name="" placeholder="Skill*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" id="pre-2" name="" placeholder="Rate %"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" id="pre-3" name="" placeholder="Skill*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" id="pre-4" name="" placeholder="Skill*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button href="#" class="btn-overlay">
+                                                <span>Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="education-check">
+                                        <div>
+                                            <input id="checkbox3-1" class="checkbox-custom checkbox-custom-3"
+                                            name="checkbox-1" type="checkbox">
+                                            <label for="checkbox3-1" class="label-check label-check-3">
+                                                <div class="skill-section">
+                                                    <h3> Writing </h3>
+                                                    <span> 89% </span>
+                                                </div>
+                                                <div class="barWrapper">
+                                                    <div class="progress-skill">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="89"
+                                                        aria-valuemin="10" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div> </label>
+                                        </div>
+                                        <div>
+                                            <input id="checkbox3-2" class="checkbox-custom checkbox-custom-3"
+                                            name="checkbox-2" type="checkbox">
+                                            <label for="checkbox3-2" class="label-check label-check-3">
+                                                <div class="skill-section">
+                                                    <h3> Listening </h3>
+                                                    <span> 70% </span>
+                                                </div>
+                                                <div class="barWrapper">
+                                                    <div class="progress-skill">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                                                        aria-valuemin="10" aria-valuemax="100"></div>
+                                                    </div>
+                                                </div> </label>
+                                        </div>
+                                        <div>
+                                            <input id="checkbox3-3" class="checkbox-custom checkbox-custom-3"
+                                            name="checkbox-2" type="checkbox">
+                                            <label for="checkbox3-3" class="label-check label-check-3">
+                                                <div class="skill-section">
+                                                    <h3> Self Learing </h3>
+                                                    <span> 95% </span>
+                                                </div>
+                                                <div class="barWrapper">
+                                                    <div class="progress-skill">
+                                                        <div class="progress-bar" role="progressbar" aria-valuenow="95"
+                                                        aria-valuemin="10" aria-valuemax="100" style=""></div>
+                                                    </div>
+                                                </div> </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!--work section-->
+                            <div class="col-md-12 all-education margin-more">
+                                <div class="education-title">
+                                    <img src="images/icons/13.png" class="img-responsive"/>
+                                    <h3> Awards</h3>
+                                </div>
+                                <form action="" class="education-details forms_form">
+                                    <div class="edit-section">
+                                        <div class="edit-pen edit-pen-4">
+                                            <i class="fa fa-pencil"></i>
+                                        </div>
+                                        <div class="cancel-select cancel-select-4 show-element-4 hide-section">
+                                            <span> Cancel </span>
+                                        </div>
+                                        <div class="delete-select delete-select-4 show-element-4 hide-section">
+                                            <button>
+                                                <i class="fa fa-close"></i><span> Delete Selected </span>
+                                            </button>
+                                        </div>
+                                        <div class="add-new-button add-new-button-4 show-element-4 hide-section">
+                                            <i class="fa fa-plus"></i><span> Add New </span>
+                                        </div>
+                                    </div>
+                                    <div class="row add-new add-new-4  hide-section">
+                                        <div class="col-md-6">
+                                            <input type="text" id="degree4-2" name="" placeholder="Award*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" id="univ4-2" name="" placeholder="Location*"
+                                            class="form-education"/>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea id="desc4-2" name="" placeholder="Description*"
+                                                class="form-education form-text-area"></textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <button href="#" class="btn-overlay">
+                                                <span>Add</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="education-check">
+                                        <div>
+                                            <input id="checkbox4-1" class="checkbox-custom checkbox-custom-4"
+                                            name="checkbox-1" type="checkbox">
+                                            <label for="checkbox4-1" class="label-check label-check-4"> <h3> Distinguished Service Award 1999 </h3> <h4> Petrotrade</h4>
+                                                <p>
+                                                    This award recognizes exemplary creativity and innovation in museum
+                                                    educational programming
+                                                </p> </label>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="user-info-second user-info-cv wow fadeInRight">
+                        <h3> Candidate Details </h3>
+                        <div class="row">
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/6.png" class="img-responsive">
+                                    <h4> Experience </h4>
+                                    <p>
+                                        <span> 5 - 10 </span> Years
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/7.png" class="img-responsive">
+                                    <h4> Age </h4>
+                                    <p>
+                                        <span> 37 </span> Years
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/8.png" class="img-responsive img-small-1">
+                                    <h4> Current Salary </h4>
+                                    <p>
+                                        <span> 1500 - 1999 </span> KD
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/9.png" class="img-responsive">
+                                    <h4> Expected Salary </h4>
+                                    <p>
+                                        <span>1999 - 2500 </span> KD
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/10.png" class="img-responsive">
+                                    <h4> Language </h4>
+                                    <p>
+                                        <span> Arabic - English </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/11.png" class="img-responsive img-small-2">
+                                    <h4> Education Level </h4>
+                                    <p>
+                                        <span> University </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-info-second wow fadeInRight">
+                        <div class="update-profile">
+                            <div class="update-title">
+                                <h3> Update Your CV </h3>
+                                <div class="circle-title">
+                                    <span>80%</span>
+                                </div>
+                                <div class="section-white"></div>
+                            </div>
+                            <p>
+                                Enhance your CV by completing the missing info
+                            </p>
+                            <div class="confirm-bar">
+                                <div class="progress-confirm">
+                                    <div class="circle done">
+                                        <span class="label">1</span>
+                                    </div>
+                                    <span class="bar done"></span>
+                                    <div class="circle done">
+                                        <span class="label">2</span>
+                                    </div>
+                                    <span class="bar done"></span>
+                                    <div class="circle done">
+                                        <span class="label">3</span>
+                                    </div>
+                                    <span class="bar done"></span>
+                                    <div class="circle done">
+                                        <span class="label">4</span>
+                                    </div>
+                                    <span class="bar done"></span>
+                                    <div class="circle ">
+                                        <span class="label"><i class="fa fa-gavel"></i></span>
+                                    </div>
+                                    <span class="bar"></span>
+                                    <div class="circle">
+                                        <span class="label"><i class="fa fa-university"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="current-position">
+                            <h4> Current Position </h4>
+                            <div class="next-page">
+                                <a href="#"> <span> Next </span><i class="fa fa-angle-right"></i> </a>
+                            </div>
+                            <div class="currntly-work">
+                                <img src="images/icons/3.png" class="img-responsive">
+                                <h4> Where do you currently work? </h4>
+                                <p>
+                                    Add Current Position
+                                </p>
+                            </div>
+                        </div>
+                        <div class="add-current">
+                            <a href="#" class="btn-overlay"><span>Add Current Position</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer class="wow fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa fa-twitter" ></i></a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="page-links">
+                        <li>
+                            <a href="#"> About Us </a>
+                        </li>
+                        <li>
+                            <a href="#"> Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <a class="footer-logo" href="#"> <img class="img-responsive" src="images/Footer-logo.png" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="privacy-policy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <p>
+                        Copyright ©2018 - Wathefa online Job Portal - All rights Reserved. Made By Wathefa.com
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="#"> Terms & Conditions </a>
+                            </li>
+                            <li>
+                                <a href="#"> Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/edit.js"></script>
+
+    </body>
+</html>

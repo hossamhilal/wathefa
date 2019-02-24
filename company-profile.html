@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="wathefa"/>
+    <title>Wathefa</title>
+    <link rel="shortcut icon" href="images/logo/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- Js -->
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/logo/loader.gif" class="img-responsive"/>          
+        </div>
+    </div>
+
+    <header class="header" id="header-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12 col-sm-12">
+                    <div class="col-md-4 col-xs-2 padding-0">
+                        <a href="#" class="logo"> <img src="images/logo/logo.png" alt=""> </a>
+                    </div>
+                    <!--links onn mobile show-->
+                    <div class="col-xs-10 hidden-lg hidden-md">
+                        <a href="#nowhere" class="navicon"></a>
+                    </div>
+                    <!--links on desktop show-->
+                    <div class="col-md-8 hidden-sm hidden-xs">
+                        <div class="menu">
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="#">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dashboard</a>
+                                            </li>
+                                            <li>
+                                                <a role="button" data-toggle="collapse" href="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne"
+                                                class="trigger collapsed">Jobs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">My CV</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Companies</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-12">
+                    <div class="all-search-section">
+                        <!-- search -->
+                        <div class="search-button">
+                            <a href="#" class="search-toggle" data-selector="#header-1"></a>
+                        </div>
+                        <div class="notifi-ico">
+                            <a href="#" data-toggle="dropdown"> <img src="images/notofication.png"/> <span> 3 </span> </a>
+                            <ul class="dropdown-menu user-noti" aria-labelledby="dLabel">
+                                <li>  <p> You Have 3 Notifications  </p> </li>
+                                <li>
+                                    <a href="#"> <img src="images/seen.png" alt="img"> <legend> 3  </legend> new profile view  </a>
+                                </li>
+                                <li>
+                                    <a href="#">  <img src="images/request.png" alt="img"> <legend> 1 </legend> interview request  </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- user icon with option -->
+                        <div class="dropdown">
+                            <div class="user-option" data-toggle="dropdown">
+                                <img src="images/user-icon.png"/>
+                                <h3 class="hidden-xs hidden-sm"> User Name </h3>
+                                <i class="fa fa-angle-down hidden-xs hidden-sm"></i>
+                            </div>
+                            <ul class="dropdown-menu user-links" aria-labelledby="dLabel">
+                                <li>
+                                    <a href="#"> <i class="fa fa-user"></i> <span> View Profile </span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-bell"></i> <span> Notification </span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-sign-out"></i> <span> Logout </span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- links of search job on navbar on desktop screen -->
+        <div id="collapseOne" class="panel-collapse collapse hidden-sm hidden-xs" role="tabpanel">
+            <div class="link-jop">
+                <ul>
+                    <li>
+                        <a href="#"> Search Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Latest Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Bookmarked Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Jobs Applied </a>
+                    </li>
+                    <li>
+                        <a href="#"> Requested Interviews </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- search form -->
+        <div class="search-box">
+            <form action="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <select class="nice-select">
+                                <option value="0"> choose job location </option>
+                                <option value="0"> choose job location </option>
+                                <option value="0"> choose job location </option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <select class="nice-select">
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <input type="text" placeholder="search by keywords">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-1">
+                            <button class="btn btn-search">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+
+    <!-- menu on mobile screen -->
+    <div class="toggle-show-screen  hidden-lg hidden-md">
+        <ul class="toggle__menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a role="button" data-toggle="collapse" href="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo"
+                class="trigger collapsed">Jobs</a>
+                <div id="collapsetwo" class="panel-collapse collapse hidden-lg hidden-md" role="tabpanel">
+                    <div class="link-jop-mobile">
+                        <ul>
+                            <li>
+                                <a href="#"> Search Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Latest Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Bookmarked Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Jobs Applied </a>
+                            </li>
+                            <li>
+                                <a href="#"> Requested Interviews </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#">My CV</a>
+            </li>
+            <li>
+                <a href="#">Companies</a>
+            </li>
+        </ul>
+    </div>
+    
+
+    <!-- body content -->
+    <section class="all-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-link wow fadeInDown">
+                        <a href="#">Home </a> / <a href="#">Followed Companies </a> /  <span> Microsoft</span>
+                    </div>
+                    <div class="page-title wow fadeInDown">
+                        <h3> Microsoft Company Profile </h3>
+                    </div>
+                </div>
+                <div class="col-md-8 col-lg-9">
+                    <div class="user-info-four wow fadeInLeft">
+                        <div class="save-pdf followed">
+                            <a href="#" class="btn-overlay"> <span>  FOLLOW  </span> </a>
+                            <p> 17k followers</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="user-image">
+                                    <img src="images/user/user.png" class="img-responsive"/>
+                                </div>
+                            </div>
+                            <div class="col-md-9">
+                                <div class="col-md-12 ">
+                                    <div class="main-info  prof-head">
+                                        <h3> MICROSOFT </h3>
+                                        <h4> Sostware company  </h4>
+                                        <h4> Kuwait  </h4>
+
+                                        <a href="#"> http://www.microsoft.com </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 padding-0">
+                                    <div class="main-info cv-data">
+                                        <div class="col-xs-12 padding-0">
+                                            <p> At Microsoft, our mission is to empower every person and every Lorem ipsum dolor sit
+                                                amet, consectetur adipisicing elit, sed do eiusmod tempor. </p>
+                                        </div>
+                                    </div>                           
+                                </div>
+
+                                <div class="col-xs-12">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li role="presentation" class="active"><a href="#about-us" aria-controls="about-us" role="tab" data-toggle="tab"> About US </a></li>
+                                        <li role="presentation"><a href="#contact-us" aria-controls="contact-us" role="tab" data-toggle="tab"> Contact US </a></li>
+                                        <li role="presentation"><a href="#jobs" aria-controls="jobs" role="tab" data-toggle="tab"> jobs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="company-tabs-data">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="about-us">
+                                <h3>About us  </h3>
+                                <p> At Microsoft, our mission is to empower every person and every organization on the planet to achieve more. 
+                                    Our mission is grounded in both the world in which we live and the future we strive to create. 
+                                    Today, we live in a mobile-first, cloud-first world, and the transformation we are driving across 
+                                    our businesses is designed to enable Microsoft and our customers to thrive in this world. </p>
+                                <p> We do business in 170 countries and are made up of 114,000 passionate employees dedicated to fulfilling 
+                                    our mission of helping you and your organization achieve more.</p>
+
+                                <h3> Who are we? </h3>
+                                <p> At Microsoft, our mission is to empower every person and every organization on the planet to achieve more. 
+                                    Our mission is grounded in both the world in which we live and the future we strive to create. 
+                                    Today, we live in a mobile-first, cloud-first world, and the transformation we are driving across 
+                                    our businesses is designed to enable Microsoft and our customers to thrive in this world. </p>
+                                <p> We do business in 170 countries and are made up of 114,000 passionate employees dedicated to fulfilling 
+                                    our mission of helping you and your organization achieve more.</p>
+
+                                <h3> Our Vision </h3>
+                                <p> At Microsoft, our mission is to empower every person and every organization on the planet to achieve more. 
+                                        Our mission is grounded in both the world in which we live and the future we strive to create. 
+                                        Today, we live in a mobile-first, cloud-first world, and the transformation we are driving across 
+                                        our businesses is designed to enable Microsoft and our customers to thrive in this world. </p>
+                                    <p> We do business in 170 countries and are made up of 114,000 passionate employees dedicated to fulfilling 
+                                        our mission of helping you and your organization achieve more.</p>
+
+                                <h3> Our Mission </h3>
+                                <p> At Microsoft, our mission is to empower every person and every organization on the planet to achieve more. 
+                                        Our mission is grounded in both the world in which we live and the future we strive to create. 
+                                        Today, we live in a mobile-first, cloud-first world, and the transformation we are driving across 
+                                        our businesses is designed to enable Microsoft and our customers to thrive in this world. </p>
+                                    <p> We do business in 170 countries and are made up of 114,000 passionate employees dedicated to fulfilling 
+                                        our mission of helping you and your organization achieve more.</p>
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="contact-us">
+                                <h3> contact Information</h3>
+
+                                <div class="contact-box">
+                                    <img src="images/placeholder.png" class="img-responsive">
+                                    <div class="data">
+                                        <p> kuwait , kuwait city , ahmed -jaber st .</p>
+                                        <p> kuwait , kuwait city  </p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-box">
+                                    <img src="images/phone-call.png" class="img-responsive">
+                                    <div class="data">
+                                        <p> <label> Help line</label> +96540033930  </p>
+                                        <p> <label> Enquires</label> +96540033930 </p>
+                                        <p> <label> fax</label> +96540033930 </p>
+                                    </div>
+                                </div>
+                                <div class="contact-box">
+                                    <img src="images/email.png" class="img-responsive">
+                                    <div class="data">
+                                        <p> ifo@wathefa.com  </p>
+                                    </div>
+                                </div>
+
+                                <div class="social-box">
+                                    <label> find us on </label>
+                                    <ul>
+                                        <li> <a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                        <li> <a href="#"> <i class="fa fa-twitter" ></i></a></li>
+                                        <li> <a href="#"> <i class="fa fa-google-plus"></i></a></li>
+                                        <li> <a href="#"> <i class="fa fa-linkedin" ></i></a></li>
+                                        <li> <a href="#"> <i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="office-branches">
+                                    <h3> office locations </h3>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-6 col-md-3"> 
+                                            <label class="radio--container"> Head quarter 
+                                                <input type="radio" checked="checked" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-3"> 
+                                            <label class="radio--container"> dubai branch
+                                                <input type="radio"  name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-3"> 
+                                            <label class="radio--container"> bahrin branch 
+                                                <input type="radio"  name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-6 col-md-3"> 
+                                            <label class="radio--container"> egypt branch 
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="map" id="map"> </div>
+                                
+
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="jobs">
+
+                                <div class="user-info-three show-boxx ">
+                                    <div class="row">
+                                        <div class="col-md-12 applied-job-title">
+                                            <div class="head company-jobs-head">
+                                                <h3> Applied Jobs  </h3>
+                                                <p> 12 jobs recently posted  </p>
+                                            </div>
+                                            <div class="change-view hidden-xs hidden-sm">
+                                                <a href="#" id="grid" class=" change-view-2 active-grid">
+                                                    <span class="fa fa-th-large"></span>
+                                                    Grid
+                                                </a>
+                                                <a href="#" id="list" class=" change-view-1  ">
+                                                    <span class="fa fa-bars"></span>
+                                                    List
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="row recommended-view list-group">
+                                                <!--card of recomended job-->
+                                                <div class="item active-section col-md-4">
+                                                    <div class="thumbnail">
+                                                        <div class="img-company">
+                                                            <img class="group list-group-image" src="images/microsoft.png" alt=""/>
+                                                            <div class="company-name">
+                                                                <h1> HR Manager </h1>
+                                                                <h2> Microsoft </h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="caption">
+                                                            <p class="group inner list-group-item-text">
+                                                                Product description... Lorem ipsum dolor sit amet.
+                                                            </p>
+                                                            <h4><span> 750 - 950 </span> KD/MONTH </h4>
+                                                            <div class="all-information">
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/4.png" class="img-responsive img-1"/>
+                                                                    <span> Kuwait </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/16.png" class="img-responsive img-2"/>
+                                                                    <span> Full-time job </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/17.png" class="img-responsive img-3"/>
+                                                                    <span> Posted 2 Days ago </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row all-apply">
+                                                                <div class="col-xs-12 col-md-6 all-add-short">
+                                                                    <div class="add-short">
+                                                                        <a href="#"><i class="fa fa-heart"></i><span> Added to list </span></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-md-6 all-apply-button">
+                                                                    <div class="apply-button">
+                                                                        <a class="btn-overlay" href="#"><span>Apply Now</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--card of recomended job-->
+                                                <div class="item col-md-4">
+                                                    <div class="thumbnail">
+                                                        <div class="img-company">
+                                                            <img class="group list-group-image" src="images/microsoft.png" alt=""/>
+                                                            <div class="company-name">
+                                                                <h1> HR Manager </h1>
+                                                                <h2> Microsoft </h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="caption">
+                                                            <p class="group inner list-group-item-text">
+                                                                Product description... Lorem ipsum dolor sit amet.
+                                                            </p>
+                                                            <h4><span> 750 - 950 </span> KD/MONTH </h4>
+                                                            <div class="all-information">
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/4.png" class="img-responsive img-1"/>
+                                                                    <span> Kuwait </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/16.png" class="img-responsive img-2"/>
+                                                                    <span> Full-time job </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/17.png" class="img-responsive img-3"/>
+                                                                    <span> Posted 2 Days ago </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row all-apply">
+                                                                <div class="col-xs-12 col-md-6 all-add-short">
+                                                                    <div class="add-short">
+                                                                        <a href="#"><i class="fa fa-heart"></i><span> Added to list </span></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-md-6 all-apply-button">
+                                                                    <div class="apply-button">
+                                                                        <a class="btn-overlay" href="#"><span>Apply Now</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--card of recomended job-->
+                                                <div class="item col-md-4">
+                                                    <div class="thumbnail">
+                                                        <div class="img-company">
+                                                            <img class="group list-group-image" src="images/microsoft.png" alt=""/>
+                                                            <div class="company-name">
+                                                                <h1> HR Manager </h1>
+                                                                <h2> Microsoft </h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="caption">
+                                                            <p class="group inner list-group-item-text">
+                                                                Product description... Lorem ipsum dolor sit amet.
+                                                            </p>
+                                                            <h4><span> 750 - 950 </span> KD/MONTH </h4>
+                                                            <div class="all-information">
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/4.png" class="img-responsive img-1"/>
+                                                                    <span> Kuwait </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/16.png" class="img-responsive img-2"/>
+                                                                    <span> Full-time job </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/17.png" class="img-responsive img-3"/>
+                                                                    <span> Posted 2 Days ago </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row all-apply">
+                                                                <div class="col-xs-12 col-md-6 all-add-short">
+                                                                    <div class="add-short">
+                                                                        <a href="#"><i class="fa fa-heart"></i><span> Add to list </span></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-md-6 all-apply-button">
+                                                                    <div class="apply-button">
+                                                                        <a class="btn-overlay" href="#"><span>Apply Now</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--card of recomended job-->
+                                                <div class="item col-md-4">
+                                                    <div class="thumbnail">
+                                                        <div class="img-company">
+                                                            <img class="group list-group-image" src="images/microsoft.png" alt=""/>
+                                                            <div class="company-name">
+                                                                <h1> HR Manager </h1>
+                                                                <h2> Microsoft </h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="caption">
+                                                            <p class="group inner list-group-item-text">
+                                                                Product description... Lorem ipsum dolor sit amet.
+                                                            </p>
+                                                            <h4><span> 750 - 950 </span> KD/MONTH </h4>
+                                                            <div class="all-information">
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/4.png" class="img-responsive img-1"/>
+                                                                    <span> Kuwait </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/16.png" class="img-responsive img-2"/>
+                                                                    <span> Full-time job </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/17.png" class="img-responsive img-3"/>
+                                                                    <span> Posted 2 Days ago </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row all-apply">
+                                                                <div class="col-xs-12 col-md-6 all-add-short">
+                                                                    <div class="add-short">
+                                                                        <a href="#"><i class="fa fa-heart"></i><span> Add to list </span></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-md-6 all-apply-button">
+                                                                    <div class="apply-button">
+                                                                        <a class="btn-overlay" href="#"><span>Apply Now</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--card of recomended job-->
+                                                <div class="item col-md-4">
+                                                    <div class="thumbnail">
+                                                        <div class="img-company">
+                                                            <img class="group list-group-image" src="images/microsoft.png" alt=""/>
+                                                            <div class="company-name">
+                                                                <h1> HR Manager </h1>
+                                                                <h2> Microsoft </h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="caption">
+                                                            <p class="group inner list-group-item-text">
+                                                                Product description... Lorem ipsum dolor sit amet.
+                                                            </p>
+                                                            <h4><span> 750 - 950 </span> KD/MONTH </h4>
+                                                            <div class="all-information">
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/4.png" class="img-responsive img-1"/>
+                                                                    <span> Kuwait </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/16.png" class="img-responsive img-2"/>
+                                                                    <span> Full-time job </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/17.png" class="img-responsive img-3"/>
+                                                                    <span> Posted 2 Days ago </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row all-apply">
+                                                                <div class="col-xs-12 col-md-6 all-add-short">
+                                                                    <div class="add-short">
+                                                                        <a href="#"><i class="fa fa-heart"></i><span> Add to list </span></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-md-6 all-apply-button">
+                                                                    <div class="apply-button">
+                                                                        <a class="btn-overlay" href="#"><span>Apply Now</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--card of recomended job-->
+                                                <div class="item col-md-4">
+                                                    <div class="thumbnail">
+                                                        <div class="img-company">
+                                                            <img class="group list-group-image" src="images/microsoft.png" alt=""/>
+                                                            <div class="company-name">
+                                                                <h1> HR Manager </h1>
+                                                                <h2> Microsoft </h2>
+                                                            </div>
+                                                        </div>
+                                                        <div class="caption">
+                                                            <p class="group inner list-group-item-text">
+                                                                Product description... Lorem ipsum dolor sit amet.
+                                                            </p>
+                                                            <h4><span> 750 - 950 </span> KD/MONTH </h4>
+                                                            <div class="all-information">
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/4.png" class="img-responsive img-1"/>
+                                                                    <span> Kuwait </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/16.png" class="img-responsive img-2"/>
+                                                                    <span> Full-time job </span>
+                                                                </div>
+                                                                <div class="discr-company">
+                                                                    <img src="images/icons/17.png" class="img-responsive img-3"/>
+                                                                    <span> Posted 2 Days ago </span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row all-apply">
+                                                                <div class="col-xs-12 col-md-6 all-add-short">
+                                                                    <div class="add-short">
+                                                                        <a href="#"><i class="fa fa-heart"></i><span> Add to list </span></a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-xs-12 col-md-6 all-apply-button">
+                                                                    <div class="apply-button">
+                                                                        <a class="btn-overlay" href="#"><span>Apply Now</span></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="user-info-second user-info-cv wow fadeInRight">
+                        <h3> Candidate Details </h3>
+                        <div class="row">
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/6.png" class="img-responsive">
+                                    <h4> Experience </h4>
+                                    <p><span> 5 - 10  </span> Years</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/7.png" class="img-responsive">
+                                    <h4> Age </h4>
+                                    <p><span> 37  </span> Years</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/8.png" class="img-responsive img-small-1">
+                                    <h4> Current Salary </h4>
+                                    <p><span> 1500 - 1999 </span> KD</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/9.png" class="img-responsive">
+                                    <h4> Expected Salary </h4>
+                                    <p><span>1999 - 2500 </span> KD</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/10.png" class="img-responsive">
+                                    <h4> Language </h4>
+                                    <p><span> Arabic - English  </span></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 padding-0">
+                                <div class="currntly-work">
+                                    <img src="images/icons/11.png" class="img-responsive img-small-2">
+                                    <h4> Education Level </h4>
+                                    <p><span> University  </span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="similar-companies">
+
+                        <h3> similar companies </h3>
+
+                        <div class="owl-carousel owl-theme similare-owl">
+                            <div class="item">
+                            <h5> oracle </h5>  
+                            <div class="top-data">
+                                    <img src="images/oracle.png" alt="img" class="img-responsive">
+                                    <div class="data">
+                                        <h6> Information Technology and Services</h6>
+                                        <p> Redwood Shores, CA </p>
+                                    </div>
+                            </div>
+                            <div class="description">
+                                    <p> The Oracle Cloud offers complete 
+                                            SaaS application suites for ERP, HCM
+                                            and CX, plus best-in-class...
+                                    </p>
+
+                                    <a href="#" class="btn-overlay"> <span>  view page   </span> </a>
+                            </div>
+                            </div>
+                            <div class="item">
+                            <h5> oracle </h5>  
+                            <div class="top-data">
+                                    <img src="images/oracle.png" alt="img" class="img-responsive">
+                                    <div class="data">
+                                        <h6> Information Technology and Services</h6>
+                                        <p> Redwood Shores, CA </p>
+                                    </div>
+                            </div>
+                            <div class="description">
+                                    <p> The Oracle Cloud offers complete 
+                                            SaaS application suites for ERP, HCM
+                                            and CX, plus best-in-class...
+                                    </p>
+
+                                    <a href="#" class="btn-overlay"> <span>  view page   </span> </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--footer-->
+    <footer class="wow fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3">
+                        <div class="footer-social">
+                            <ul>
+                                <li>
+                                    <a href="#"> <i class="fa fa-facebook"></i> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-twitter" ></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <ul class="page-links">
+                            <li>
+                                <a href="#"> About Us </a>
+                            </li>
+                            <li>
+                                <a href="#"> Contact Us </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-3">
+                        <a class="footer-logo" href="#"> <img class="img-responsive" src="images/Footer-logo.png" alt=""> </a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <div class="privacy-policy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <p>
+                        Copyright ©2018 - Wathefa online Job Portal - All rights Reserved. Made By Wathefa.com
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="#"> Terms & Conditions </a>
+                            </li>
+                            <li>
+                                <a href="#"> Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/edit.js"></script>
+
+    <script>    
+        var beaches = [
+            ['Matrouh', 31.356888, 27.267245, 1]
+        ];
+
+        function initMap() {
+            var myLatLng = { lat: 31.3568883, lng: 27.2672453 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: myLatLng
+            });
+            setMarkers(map);
+        }
+
+        function setMarkers(map) {
+            var image = {
+                url: 'images/map.png',
+                size: new google.maps.Size(50, 82),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(0, 32)
+            };
+            var shape = {
+                coords: [1, 1, 1, 20, 18, 20, 18, 1],
+                type: 'poly'
+            };
+            for (var i = 0; i < beaches.length; i++) {
+                var beach = beaches[i];
+                var marker = new google.maps.Marker({
+                    position: { lat: beach[1], lng: beach[2] },
+                    map: map,
+                    icon: image,
+                    shape: shape,
+                    title: beach[0],
+                    zIndex: beach[3]
+                });
+            }
+        }
+            
+    </script> 
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5Xz9rMq52xAtXTjm6v_cMeppcxWnm0-M&callback=initMap">
+    </script>
+
+</body>
+</html>

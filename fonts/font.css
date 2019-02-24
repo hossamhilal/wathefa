@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('Myriad Pro Bold SemiExtended.ttf');
+    src: url('MyriadPro-BlackSemiCn.otf');
+    src: url('MyriadPro-Bold.otf');
+    src: url('MyriadPro-Regular.otf');
+    src: url('Myriad Pro Bold SemiExtended.ttf') format('truetype');
+    src: url('Myriad Pro Regular.ttf') format('truetype');
+}

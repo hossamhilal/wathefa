@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="wathefa"/>
+    <title>Wathefa</title>
+    <link rel="shortcut icon" href="images/logo/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- Js -->
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/logo/loader.gif" class="img-responsive"/>          
+        </div>
+    </div>
+
+    <header class="header" id="header-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12 col-sm-12">
+                    <div class="col-md-4 col-xs-2 padding-0">
+                        <a href="#" class="logo"> <img src="images/logo/logo.png" alt=""> </a>
+                    </div>
+                    <!--links onn mobile show-->
+                    <div class="col-xs-10 hidden-lg hidden-md">
+                        <a href="#nowhere" class="navicon"></a>
+                    </div>
+                    <!--links on desktop show-->
+                    <div class="col-md-8 hidden-sm hidden-xs">
+                        <div class="menu">
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="#">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dashboard</a>
+                                            </li>
+                                            <li>
+                                                <a role="button" data-toggle="collapse" href="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne"
+                                                class="trigger collapsed">Jobs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">My CV</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Companies</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-12">
+                    <div class="all-search-section">
+                        <!-- search -->
+                        <div class="search-button">
+                            <a href="#" class="search-toggle" data-selector="#header-1"></a>
+                        </div>
+                        <div class="notifi-ico">
+                            <a href="#"> <img src="images/notofication.png"/> <span> 3 </span> </a>
+                        </div>
+                        <!-- user icon with option -->
+                        <div class="dropdown">
+                            <div class="user-option" data-toggle="dropdown">
+                                <img src="images/user-icon.png"/>
+                                <h3 class="hidden-xs hidden-sm"> User Name </h3>
+                                <i class="fa fa-angle-down hidden-xs hidden-sm"></i>
+                            </div>
+                            <ul class="dropdown-menu user-links" aria-labelledby="dLabel">
+                                <li>
+                                    <a href="#"> <i class="fa fa-user"></i> <span> View Profile </span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-bell"></i> <span> Notification </span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-sign-out"></i> <span> Logout </span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- links of search job on navbar on desktop screen -->
+        <div id="collapseOne" class="panel-collapse collapse hidden-sm hidden-xs" role="tabpanel">
+            <div class="link-jop">
+                <ul>
+                    <li>
+                        <a href="#"> Search Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Latest Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Bookmarked Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Jobs Applied </a>
+                    </li>
+                    <li>
+                        <a href="#"> Requested Interviews </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- search form -->
+        <div class="search-box">
+            <form action="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <select class="nice-select">
+                                <option value="0"> choose job location </option>
+                                <option value="0"> choose job location </option>
+                                <option value="0"> choose job location </option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <select class="nice-select">
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <input type="text" placeholder="search by keywords">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-1">
+                            <button class="btn btn-search">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+
+    <!-- menu on mobile screen -->
+    <div class="toggle-show-screen  hidden-lg hidden-md">
+        <ul class="toggle__menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a role="button" data-toggle="collapse" href="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo"
+                class="trigger collapsed">Jobs</a>
+                <div id="collapsetwo" class="panel-collapse collapse hidden-lg hidden-md" role="tabpanel">
+                    <div class="link-jop-mobile">
+                        <ul>
+                            <li>
+                                <a href="#"> Search Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Latest Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Bookmarked Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Jobs Applied </a>
+                            </li>
+                            <li>
+                                <a href="#"> Requested Interviews </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#">My CV</a>
+            </li>
+            <li>
+                <a href="#">Companies</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- body content -->
+    <section class="all-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 wow fadeInDown">
+                    <div class="page-link">
+                        <a href="#">Home </a> / <span> Jobs Applied </span>
+                    </div>
+                    <!--<div class="page-title">-->
+                    <!--<h3> Welcome back <span> Mohamed </span></h3>-->
+                    <!--</div>-->
+                </div>
+                <div class="col-md-9">
+                    <div class="user-info-three app-jobs show-boxx wow fadeInLeft">
+                        <!-- <div class="row"> -->
+                            <div class="col-md-12 applied-job-title">
+                                <h3 class="head">(<span> 19 </span>) Applied Jobs </h3>
+                                <div class="change-view hidden-xs hidden-sm">
+                                    <a href="#" id="grid" class=" change-view-2"> <span class="fa fa-th-large"></span> Grid </a>
+                                    <a href="#" id="list" class=" change-view-1  active-grid"> <span class="fa fa-bars"></span> List </a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 all-job-info">
+                                <div class="all-job-applied   first">
+                                    <div class="row box">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="applied-job">
+                                                <img src="images/microsoft.png"  class="img-responsive comapny-img"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> HR Manager </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> microsoft</h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/time.png" class="img-responsive"> FULL-TIME JOB</h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2><img src="images/map.png" class="img-responsive"> Kuwait , city </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/clock.png" class="img-responsive"> Applied 2 Month ago </h2>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Application Viewed </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <div class="applied-button">
+                                                <a href="#" class="btn-overlay"><span>Cancel</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 all-job-info">
+                                <div class="all-job-applied">
+                                    <div class="row box">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="applied-job">
+                                                <img src="images/microsoft.png"  class="img-responsive comapny-img"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> HR Manager </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> microsoft</h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/time.png" class="img-responsive"> FULL-TIME JOB</h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2><img src="images/map.png" class="img-responsive"> Kuwait , city </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/clock.png" class="img-responsive"> Applied 2 Month ago </h2>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Application Viewed </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <div class="applied-button">
+                                                <a href="#" class="btn-overlay"><span>Cancel</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 all-job-info">
+                                <div class="all-job-applied">
+                                    <div class="row box">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="applied-job">
+                                                <img src="images/microsoft.png"  class="img-responsive comapny-img"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> HR Manager </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> microsoft</h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/time.png" class="img-responsive"> FULL-TIME JOB</h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2><img src="images/map.png" class="img-responsive"> Kuwait , city </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/clock.png" class="img-responsive"> Applied 2 Month ago </h2>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Application Viewed </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <div class="applied-button">
+                                                <a href="#" class="btn-overlay"><span>Cancel</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 all-job-info">
+                                <div class="all-job-applied">
+                                    <div class="row box">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="applied-job">
+                                                <img src="images/microsoft.png"  class="img-responsive comapny-img"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> HR Manager </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> microsoft</h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/time.png" class="img-responsive"> FULL-TIME JOB</h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2><img src="images/map.png" class="img-responsive"> Kuwait , city </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/clock.png" class="img-responsive"> Applied 2 Month ago </h2>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Application Viewed </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <div class="applied-button">
+                                                <a href="#" class="btn-overlay"><span>Cancel</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 all-job-info">
+                                <div class="all-job-applied">
+                                    <div class="row box">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="applied-job">
+                                                <img src="images/microsoft.png"  class="img-responsive comapny-img"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> HR Manager </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> microsoft</h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/time.png" class="img-responsive"> FULL-TIME JOB</h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2><img src="images/map.png" class="img-responsive"> Kuwait , city </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/clock.png" class="img-responsive"> Applied 2 Month ago </h2>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Application Viewed </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <div class="applied-button">
+                                                <a href="#" class="btn-overlay"><span>Cancel</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 all-job-info">
+                                <div class="all-job-applied">
+                                    <div class="row box">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="applied-job">
+                                                <img src="images/microsoft.png"  class="img-responsive comapny-img"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> HR Manager </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> microsoft</h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/time.png" class="img-responsive"> FULL-TIME JOB</h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2><img src="images/map.png" class="img-responsive"> Kuwait , city </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/clock.png" class="img-responsive"> Applied 2 Month ago </h2>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Application Viewed </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <div class="applied-button">
+                                                <a href="#" class="btn-overlay"><span>Cancel</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 all-job-info">
+                                <div class="all-job-applied">
+                                    <div class="row box">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="applied-job">
+                                                <img src="images/microsoft.png"  class="img-responsive comapny-img"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> HR Manager </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> microsoft</h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/time.png" class="img-responsive"> FULL-TIME JOB</h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2><img src="images/map.png" class="img-responsive"> Kuwait , city </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/clock.png" class="img-responsive"> Applied 2 Month ago </h2>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Application Viewed </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <div class="applied-button">
+                                                <a href="#" class="btn-overlay"><span>Cancel</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 all-job-info">
+                                <div class="all-job-applied">
+                                    <div class="row box">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="applied-job">
+                                                <img src="images/microsoft.png"  class="img-responsive comapny-img"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> HR Manager </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> microsoft</h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/time.png" class="img-responsive"> FULL-TIME JOB</h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2><img src="images/map.png" class="img-responsive"> Kuwait , city </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/clock.png" class="img-responsive"> Applied 2 Month ago </h2>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Application Viewed </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <div class="applied-button">
+                                                <a href="#" class="btn-overlay"><span>Cancel</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 all-job-info">
+                                <div class="all-job-applied">
+                                    <div class="row box">
+                                        <div class="col-xs-12 col-md-4">
+                                            <div class="applied-job">
+                                                <img src="images/microsoft.png"  class="img-responsive comapny-img"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> HR Manager </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> microsoft</h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/time.png" class="img-responsive"> FULL-TIME JOB</h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2><img src="images/map.png" class="img-responsive"> Kuwait , city </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-3">
+                                            <div class="applied-job">
+                                                <ul>
+                                                    <li>
+                                                        <h2><img src="images/clock.png" class="img-responsive"> Applied 2 Month ago </h2>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"> Application Viewed </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-md-2">
+                                            <div class="applied-button">
+                                                <a href="#" class="btn-overlay"><span>Cancel</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="user-info-three side-jobs wow fadeInRight">
+                        <div class="row">
+                            <div class="col-md-12 applied-job-title padding-0">
+                                <h3>(<span> 3 </span>) Saved Jobs </h3>
+                            </div>
+                            <div class="col-md-12 all-job-info padding-0">
+                                <div class="all-job-applied">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="applied-job">
+                                                <img src="images/user/user.png" class="img-responsive"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> Company Name </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> City , Country </h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2> Company Location </h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2> 1 Week ago </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 all-job-info padding-0">
+                                <div class="all-job-applied">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="applied-job">
+                                                <img src="images/user/user.png" class="img-responsive"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> Company Name </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> City , Country </h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2> Company Location </h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2> 1 Week ago </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12 all-job-info padding-0">
+                                <div class="all-job-applied">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="applied-job">
+                                                <img src="images/user/user.png" class="img-responsive"/>
+                                                <ul>
+                                                    <li>
+                                                        <h3> Company Name </h3>
+                                                    </li>
+                                                    <li>
+                                                        <h2> City , Country </h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2> Company Location </h2>
+                                                    </li>
+                                                    <li>
+                                                        <h2> 1 Week ago </h2>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+
+    <!--footer-->
+    <footer class="wow fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa fa-twitter" ></i></a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="page-links">
+                        <li>
+                            <a href="#"> About Us </a>
+                        </li>
+                        <li>
+                            <a href="#"> Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <a class="footer-logo" href="#"> <img class="img-responsive" src="images/Footer-logo.png" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="privacy-policy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <p>
+                        Copyright ©2018 - Wathefa online Job Portal - All rights Reserved. Made By Wathefa.com
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="#"> Terms & Conditions </a>
+                            </li>
+                            <li>
+                                <a href="#"> Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/edit.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport'/>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="wathefa"/>
+    <title>Wathefa</title>
+    <link rel="shortcut icon" href="images/logo/favicon.ico">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/font.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- Js -->
+</head>
+<body>
+
+    <div id="preloader">
+        <div class="loader">
+            <img src="images/logo/loader.gif" class="img-responsive"/>          
+        </div>
+    </div>
+
+    <header class="header" id="header-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-xs-12 col-sm-12">
+                    <div class="col-md-4 col-xs-2 padding-0">
+                        <a href="#" class="logo"> <img src="images/logo/logo.png" alt=""> </a>
+                    </div>
+                    <!--links onn mobile show-->
+                    <div class="col-xs-10 hidden-lg hidden-md">
+                        <a href="#nowhere" class="navicon"></a>
+                    </div>
+                    <!--links on desktop show-->
+                    <div class="col-md-8 hidden-sm hidden-xs">
+                        <div class="menu">
+                            <nav class="navbar navbar-default" role="navigation">
+                                <div class="container-fluid">
+                                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                        <ul class="nav navbar-nav">
+                                            <li>
+                                                <a href="#">Home</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Dashboard</a>
+                                            </li>
+                                            <li>
+                                                <a role="button" data-toggle="collapse" href="#collapseOne"
+                                                aria-expanded="true" aria-controls="collapseOne"
+                                                class="trigger collapsed">Jobs</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">My CV</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Companies</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-12">
+                    <div class="all-search-section">
+                        <!-- search -->
+                        <div class="search-button">
+                            <a href="#" class="search-toggle" data-selector="#header-1"></a>
+                        </div>
+                        <div class="notifi-ico">
+                            <a href="#"> <img src="images/notofication.png"/> <span> 3 </span> </a>
+                        </div>
+                        <!-- user icon with option -->
+                        <div class="dropdown">
+                            <div class="user-option" data-toggle="dropdown">
+                                <img src="images/user-icon.png"/>
+                                <h3 class="hidden-xs hidden-sm"> User Name </h3>
+                                <i class="fa fa-angle-down hidden-xs hidden-sm"></i>
+                            </div>
+                            <ul class="dropdown-menu user-links" aria-labelledby="dLabel">
+                                <li>
+                                    <a href="#"> <i class="fa fa-user"></i> <span> View Profile </span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-bell"></i> <span> Notification </span> </a>
+                                </li>
+                                <li>
+                                    <a href="#"> <i class="fa fa-sign-out"></i> <span> Logout </span> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- links of search job on navbar on desktop screen -->
+        <div id="collapseOne" class="panel-collapse collapse hidden-sm hidden-xs" role="tabpanel">
+            <div class="link-jop">
+                <ul>
+                    <li>
+                        <a href="#"> Search Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Latest Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Bookmarked Jobs </a>
+                    </li>
+                    <li>
+                        <a href="#"> Jobs Applied </a>
+                    </li>
+                    <li>
+                        <a href="#"> Requested Interviews </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- search form -->
+        <div class="search-box">
+            <form action="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <select class="nice-select">
+                                <option value="0"> choose job location </option>
+                                <option value="0"> choose job location </option>
+                                <option value="0"> choose job location </option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <select class="nice-select">
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                                <option value="0"> job categorey </option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-4">
+                            <input type="text" placeholder="search by keywords">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-1">
+                            <button class="btn btn-search">
+                                Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+
+    <!-- menu on mobile screen -->
+    <div class="toggle-show-screen  hidden-lg hidden-md">
+        <ul class="toggle__menu">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Dashboard</a>
+            </li>
+            <li>
+                <a role="button" data-toggle="collapse" href="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo"
+                class="trigger collapsed">Jobs</a>
+                <div id="collapsetwo" class="panel-collapse collapse hidden-lg hidden-md" role="tabpanel">
+                    <div class="link-jop-mobile">
+                        <ul>
+                            <li>
+                                <a href="#"> Search Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Latest Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Bookmarked Jobs </a>
+                            </li>
+                            <li>
+                                <a href="#"> Jobs Applied </a>
+                            </li>
+                            <li>
+                                <a href="#"> Requested Interviews </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="#">My CV</a>
+            </li>
+            <li>
+                <a href="#">Companies</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+    <section class="all-body contact-body">
+        <div class="container">
+            <div class="page-link">
+                <a href="#">Home </a> / <span> Contact US  </span>
+            </div>
+            <h2 class="title"> Contact US </h2>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="map" id="map"></div>
+            <div class="container">
+                <div class="contact-usbox">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-8">
+                            <div class="form-box education-details ">
+                                <form action="">
+                                    <div class="add-new">
+                                        <h5> Get in Touch with us</h5>
+                                        <div class="col-md-6">
+                                            <input type="text"  placeholder="Name*" class="form-education">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="email"  placeholder="Email*" class="form-education">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text"  placeholder="Phone*" class="form-education">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text"  placeholder="Subject*" class="form-education">
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="text" placeholder="Message*" class="form-education">
+                                        </div>
+                                        <div class="col-md-12 btn-box">
+                                            <button href="#" class="btn-overlay" type="submit">
+                                                <span> Send Message </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4">
+                            <div class="conatct-informaton">
+                                <h3> contact Information</h3>
+
+                                <div class="contact-box">
+                                    <img src="images/placeholder.png" class="img-responsive">
+                                    <div class="data">
+                                        <p> kuwait , kuwait city , ahmed -jaber st .</p>
+                                        <p> kuwait , kuwait city  </p>
+                                    </div>
+                                </div>
+    
+                                <div class="contact-box">
+                                    <img src="images/phone-call.png" class="img-responsive">
+                                    <div class="data">
+                                        <p> <label> Help line</label> <span>  +96540033930  </span> </p>
+                                        <p> <label> Enquires</label> <span>  +96540033930 </span> </p>
+                                        <p> <label> fax</label> <span>  +96540033930 </span> </p>
+                                    </div>
+                                </div>
+                                <div class="contact-box">
+                                    <img src="images/email.png" class="img-responsive">
+                                    <div class="data">
+                                        <p> ifo@wathefa.com  </p>
+                                    </div>
+                                </div>
+    
+                                <div class="social-box">
+                                        <label> find us on </label>
+                                        <ul>
+                                            <li> <a href="#"> <i class="fa fa-facebook"></i> </a></li>
+                                            <li> <a href="#"> <i class="fa fa-twitter" ></i></a></li>
+                                            <li> <a href="#"> <i class="fa fa-google-plus"></i></a></li>
+                                            <li> <a href="#"> <i class="fa fa-linkedin" ></i></a></li>
+                                            <li> <a href="#"> <i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--footer-->
+    <footer class="wow fadeInUp">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-3">
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a href="#"> <i class="fa fa-facebook"></i> </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa fa-twitter" ></i></a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="page-links">
+                        <li>
+                            <a href="#"> About Us </a>
+                        </li>
+                        <li>
+                            <a href="#"> Contact Us </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                    <a class="footer-logo" href="#"> <img class="img-responsive" src="images/Footer-logo.png" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="privacy-policy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-8">
+                    <p>
+                        Copyright ©2018 - Wathefa online Job Portal - All rights Reserved. Made By Wathefa.com
+                    </p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="links">
+                        <ul>
+                            <li>
+                                <a href="#"> Terms & Conditions </a>
+                            </li>
+                            <li>
+                                <a href="#"> Privacy Policy </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+
+    <script src="js/jquery.nice-select.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/edit.js"></script>
+
+
+    <script>    
+        var beaches = [
+            ['Matrouh', 31.356888, 27.267245, 1]
+        ];
+
+        function initMap() {
+            var myLatLng = { lat: 31.3568883, lng: 27.2672453 };
+
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 13,
+                center: myLatLng
+            });
+            setMarkers(map);
+        }
+
+        function setMarkers(map) {
+            var image = {
+                url: 'images/map.png',
+                size: new google.maps.Size(50, 82),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(0, 32)
+            };
+            var shape = {
+                coords: [1, 1, 1, 20, 18, 20, 18, 1],
+                type: 'poly'
+            };
+            for (var i = 0; i < beaches.length; i++) {
+                var beach = beaches[i];
+                var marker = new google.maps.Marker({
+                    position: { lat: beach[1], lng: beach[2] },
+                    map: map,
+                    icon: image,
+                    shape: shape,
+                    title: beach[0],
+                    zIndex: beach[3]
+                });
+            }
+        }
+                
+    </script> 
+    
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5Xz9rMq52xAtXTjm6v_cMeppcxWnm0-M&callback=initMap">
+    </script>
+        
+
+    </body>
+</html>
